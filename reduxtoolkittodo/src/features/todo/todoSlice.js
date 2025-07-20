@@ -4,6 +4,7 @@ const initialState ={
     todos: [{id: 1, text: "Hello World"}]
 }
 
+// Create a slice of the Redux store for todo operations
 export const  todoSlice= createSlice({
     name: 'todo',
     initialState,
@@ -27,7 +28,8 @@ export const  todoSlice= createSlice({
     }
 });
 
-
+// Export individual actions for use in components
 export const {addTodo, removeTodo, updateTodo, deleteTodo} = todoSlice.actions;
 
+// Export the reducer function for use in the Redux store
 export default todoSlice.reducer;
