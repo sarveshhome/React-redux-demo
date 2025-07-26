@@ -79,3 +79,8 @@ const router = createBrowserRouter(
 
        - Provides better organization of components
 
+
+
+netlify deploy
+
+Deployed to production URL: https://reactrouterwithloader.netlify.app 
