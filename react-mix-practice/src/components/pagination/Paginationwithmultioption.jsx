@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Paginationwithmultioption.css"
 
 function Paginationwithmultioption() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -77,16 +78,17 @@ function Paginationwithmultioption() {
   };
 
   return (
-    <div>
-      <h2>User List</h2>
-      <ul>
+    <div className="pagination-container">
+      <h2 className="pagination-header">User List</h2>
+      <ul className="user-list">
         {currentRecords.map((user) => (
-          <li key={user.id}>{user.name}</li>
+          <li key={user.id} className="user-list-item">
+            {user.name}
+          </li>
         ))}
       </ul>
-
       {/* Pagination Controls */}
-      <div style={{ marginTop: "10px" }}>
+      <div className="pagination-controls">
         <button onClick={() => setCurrentPage(1)}>First</button>
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
