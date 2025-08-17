@@ -1,9 +1,8 @@
 # React + Vite
 
-# Create Project 
+# Create Project
 
 `yarn create vite miniContext`
-
 
 # miniContext
 
@@ -22,7 +21,7 @@ This project showcases the usage of React's Context API for efficient state mana
 
 ## Installation
 
-```bash
+````bash
 
 
 # Navigate to project directory
@@ -31,7 +30,7 @@ cd miniContext
 # Install dependencies
 npm install
 
-yarn 
+yarn
 
 # Start the development server
 npm run dev
@@ -51,15 +50,14 @@ function ExampleComponent() {
   const { state, setState } = useContext(YourContext)
   // Your component logic here
 }
-```
+````
 
 Tech Stack
-   -- React
+-- React
 
-   -- Vite
+-- Vite
 
-   -- Context API
-
+-- Context API
 
 ### Project Structure
 
@@ -74,3 +72,43 @@ miniContext/
 └── README.md
 ```
 
+
+### Prettier
+
+Setup Steps:
+Install Prettier.
+
+
+```
+    npm install --save-dev prettier
+    # or
+    yarn add --dev prettier
+```
+
+
+### create file
+
+Create a .prettierrc.json file
+
+```
+    {
+      "semi": true,
+      "singleQuote": true,
+      "jsxSingleQuote": false,
+      "trailingComma": "es5",
+      "printWidth": 80,
+      "tabWidth": 2
+    }
+```
+
+
+### update package.json
+
+Include scripts in your package.json to easily run Prettier:
+
+```
+    "scripts": {
+      "format": "prettier --write .",
+      "format:check": "prettier --check ."
+    }
+```
