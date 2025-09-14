@@ -20,6 +20,8 @@ const StaffDetails = ({ staff }) => {
             <th className="p-2">Name</th>
             <th className="p-2">Role</th>
             <th className="p-2">Department</th>
+            <th className="p-2">Email</th>
+            <th className="p-2">Phone</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +31,8 @@ const StaffDetails = ({ staff }) => {
               <td className="p-2">{member.name}</td>
               <td className="p-2">{member.role}</td>
               <td className="p-2">{member.department}</td>
+              <td className="p-2">{member.email}</td>
+              <td className="p-2">{member.phone}</td>
             </tr>
           ))}
         </tbody>

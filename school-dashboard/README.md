@@ -45,3 +45,12 @@ school-dashboard/
 └── [other directories and files]
 
 ```
+
+
+### tailwindcss
+
+```
+yarn add --dev tailwindcss@3 postcss autoprefixer
+yarn tailwindcss init -p
+
+```

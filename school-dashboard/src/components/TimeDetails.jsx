@@ -9,6 +9,8 @@ const TimeDetails = ({ timeDetails }) => (
             <th className="p-2">Period</th>
             <th className="p-2">Subject</th>
             <th className="p-2">Time</th>
+            <th className="p-2">Teacher</th>
+            <th className="p-2">Room</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +19,8 @@ const TimeDetails = ({ timeDetails }) => (
               <td className="p-2">{period.period}</td>
               <td className="p-2">{period.subject}</td>
               <td className="p-2">{period.time}</td>
+              <td className="p-2">{period.teacher}</td>
+              <td className="p-2">{period.room}</td>
             </tr>
           ))}
         </tbody>

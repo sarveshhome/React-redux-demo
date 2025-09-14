@@ -20,6 +20,9 @@ const StudentDetails = ({ students }) => {
             <th className="p-2">Name</th>
             <th className="p-2">Grade</th>
             <th className="p-2">Roll No</th>
+            <th className="p-2">Email</th>
+            <th className="p-2">Phone</th>
+            <th className="p-2">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +32,9 @@ const StudentDetails = ({ students }) => {
               <td className="p-2">{student.name}</td>
               <td className="p-2">{student.grade}</td>
               <td className="p-2">{student.rollNo}</td>
+              <td className="p-2">{student.email}</td>
+              <td className="p-2">{student.phone}</td>
+              <td className="p-2">{student.status}</td>
             </tr>
           ))}
         </tbody>

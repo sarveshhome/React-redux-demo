@@ -1,37 +1,75 @@
 {
     "schoolInfo": {
       "name": "Springfield High School",
-      "address": "1234 Education Lane, Springfield",
+      "address": "1234 Education Lane, Springfield, IL 62704",
       "established": "1985",
-      "principal": "Dr. John Smith"
+      "principal": "Dr. John Smith",
+      "phone": "(217) 555-1234",
+      "email": "info@springfieldhs.com",
+      "website": "www.springfieldhs.com",
+      "motto": "Excellence in Education"
     },
     "students": [
-      { "id": 1, "name": "Alice Johnson", "grade": "10th", "rollNo": "A101" },
-      { "id": 2, "name": "Bob Wilson", "grade": "11th", "rollNo": "A102" }
+      { "id": 1, "name": "Alice Johnson", "grade": "10th", "rollNo": "A101", "email": "alice.j@school.com", "phone": "(217) 555-1001", "status": "Active" },
+      { "id": 2, "name": "Bob Wilson", "grade": "11th", "rollNo": "A102", "email": "bob.w@school.com", "phone": "(217) 555-1002", "status": "Active" },
+      { "id": 3, "name": "Clara Thompson", "grade": "9th", "rollNo": "A103", "email": "clara.t@school.com", "phone": "(217) 555-1003", "status": "Active" },
+      { "id": 4, "name": "David Miller", "grade": "12th", "rollNo": "A104", "email": "david.m@school.com", "phone": "(217) 555-1004", "status": "Active" },
+      { "id": 5, "name": "Emma Davis", "grade": "10th", "rollNo": "A105", "email": "emma.d@school.com", "phone": "(217) 555-1005", "status": "Inactive" }
     ],
     "teachers": [
-      { "id": 1, "name": "Emma Brown", "subject": "Mathematics", "experience": "8 years" },
-      { "id": 2, "name": "James Lee", "subject": "Science", "experience": "5 years" }
+      { "id": 1, "name": "Emma Brown", "subject": "Mathematics", "experience": "8 years", "email": "emma.b@school.com", "phone": "(217) 555-2001", "department": "Math" },
+      { "id": 2, "name": "James Lee", "subject": "Science", "experience": "5 years", "email": "james.l@school.com", "phone": "(217) 555-2002", "department": "Science" },
+      { "id": 3, "name": "Linda Carter", "subject": "English", "experience": "10 years", "email": "linda.c@school.com", "phone": "(217) 555-2003", "department": "English" },
+      { "id": 4, "name": "Michael Patel", "subject": "History", "experience": "3 years", "email": "michael.p@school.com", "phone": "(217) 555-2004", "department": "Social Studies" },
+      { "id": 5, "name": "Sophia Nguyen", "subject": "Physical Education", "experience": "6 years", "email": "sophia.n@school.com", "phone": "(217) 555-2005", "department": "PE" }
     ],
     "staff": [
-      { "id": 1, "name": "Sarah Davis", "role": "Librarian", "department": "Library" },
-      { "id": 2, "name": "Mike Clark", "role": "Janitor", "department": "Maintenance" }
+      { "id": 1, "name": "Sarah Davis", "role": "Librarian", "department": "Library", "email": "sarah.d@school.com", "phone": "(217) 555-3001" },
+      { "id": 2, "name": "Mike Clark", "role": "Janitor", "department": "Maintenance", "email": "mike.c@school.com", "phone": "(217) 555-3002" },
+      { "id": 3, "name": "Lisa Adams", "role": "Administrative Assistant", "department": "Administration", "email": "lisa.a@school.com", "phone": "(217) 555-3003" },
+      { "id": 4, "name": "Robert King", "role": "Security Guard", "department": "Security", "email": "robert.k@school.com", "phone": "(217) 555-3004" },
+      { "id": 5, "name": "Nancy White", "role": "Accountant", "department": "Accounts", "email": "nancy.w@school.com", "phone": "(217) 555-3005" }
     ],
     "timeDetails": {
       "schoolHours": "8:00 AM - 3:00 PM",
       "periods": [
-        { "period": 1, "subject": "Mathematics", "time": "8:00 AM - 9:00 AM" },
-        { "period": 2, "subject": "Science", "time": "9:00 AM - 10:00 AM" }
+        { "period": 1, "subject": "Mathematics", "time": "8:00 AM - 9:00 AM", "teacher": "Emma Brown", "room": "101" },
+        { "period": 2, "subject": "Science", "time": "9:00 AM - 10:00 AM", "teacher": "James Lee", "room": "102" },
+        { "period": 3, "subject": "English", "time": "10:00 AM - 11:00 AM", "teacher": "Linda Carter", "room": "103" },
+        { "period": 4, "subject": "History", "time": "11:00 AM - 12:00 PM", "teacher": "Michael Patel", "room": "104" },
+        { "period": 5, "subject": "Physical Education", "time": "1:00 PM - 2:00 PM", "teacher": "Sophia Nguyen", "room": "Gym" },
+        { "period": 6, "subject": "Art", "time": "2:00 PM - 3:00 PM", "teacher": "Guest Instructor", "room": "105" }
       ]
     },
     "library": {
-      "totalBooks": 5000,
-      "categories": ["Fiction", "Non-Fiction", "Science", "History"],
-      "librarian": "Sarah Davis"
+      "totalBooks": 7500,
+      "categories": [
+        "Fiction",
+        "Non-Fiction",
+        "Science",
+        "History",
+        "Mathematics",
+        "Literature",
+        "Computer Science",
+        "Art",
+        "Biography",
+        "Reference"
+      ],
+      "librarian": "Sarah Davis",
+      "totalBorrowed": 250,
+      "availableBooks": 7250
     },
     "office": {
-      "staffCount": 10,
-      "departments": ["Administration", "Accounts", "HR"],
-      "contact": "office@springfieldhs.com"
+      "staffCount": 15,
+      "departments": [
+        "Administration",
+        "Accounts",
+        "Human Resources",
+        "IT Support",
+        "Counseling"
+      ],
+      "contact": "office@springfieldhs.com",
+      "officeHours": "7:30 AM - 4:30 PM",
+      "manager": "Lisa Adams"
     }
   }

@@ -20,6 +20,9 @@ const TeacherDetails = ({ teachers }) => {
             <th className="p-2">Name</th>
             <th className="p-2">Subject</th>
             <th className="p-2">Experience</th>
+            <th className="p-2">Email</th>
+            <th className="p-2">Phone</th>
+            <th className="p-2">Department</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +32,9 @@ const TeacherDetails = ({ teachers }) => {
               <td className="p-2">{teacher.name}</td>
               <td className="p-2">{teacher.subject}</td>
               <td className="p-2">{teacher.experience}</td>
+              <td className="p-2">{teacher.email}</td>
+              <td className="p-2">{teacher.phone}</td>
+              <td className="p-2">{teacher.department}</td>
             </tr>
           ))}
         </tbody>

@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import Sidebar from './Sidebar';
-import SchoolInfo from './SchoolInfo';
-import StudentDetails from './StudentDetails';
-import TeacherDetails from './TeacherDetails';
-import StaffDetails from './StaffDetails';
-import TimeDetails from './TimeDetails';
-import LibraryDetails from './LibraryDetails';
-import OfficeDashboard from './OfficeDashboard';
 import useDashboardData from '../hooks/useDashboardData';
+
+// Lazy load all components
+const SchoolInfo = lazy(() => import('./SchoolInfo'));
+const StudentDetails = lazy(() => import('./StudentDetails'));
+const TeacherDetails = lazy(() => import('./TeacherDetails'));
+const StaffDetails = lazy(() => import('./StaffDetails'));
+const TimeDetails = lazy(() => import('./TimeDetails'));
+const LibraryDetails = lazy(() => import('./LibraryDetails'));
+const OfficeDashboard = lazy(() => import('./OfficeDashboard'));
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('School Info');
@@ -42,7 +44,9 @@ const Dashboard = () => {
       <Sidebar setActiveSection={setActiveSection} />
       <div className="flex-1 p-6 bg-gray-100 min-h-screen">
         <h1 className="text-3xl font-bold mb-6">School Dashboard</h1>
-        {renderSection()}
+        <Suspense fallback={<div className="text-center p-4">Loading Component...</div>}>
+          {renderSection()}
+        </Suspense>
       </div>
     </div>
   );
