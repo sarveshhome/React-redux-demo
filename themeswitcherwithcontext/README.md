@@ -1,12 +1,66 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Theme Switcher with Context
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A React application demonstrating theme switching functionality using React Context API. This project showcases how to implement dark/light theme switching across an entire application efficiently.
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Dynamic theme switching (Dark/Light mode)
+- Persistent theme selection using localStorage
+- Context API implementation
+- Responsive design
+- Custom theme configuration
+
+## 🛠️ Technologies Used
+
+- React 
+- Vite
+- Context API
+- CSS Variables
+- localStorage
+
+
+4. Start the development server:
+
+`npm run dev`
+
+`yarn dev`
+
+
+```javascript 
+// Example of how to use the theme context in your components
+import { useTheme } from './contexts/ThemeContext'
+
+function ExampleComponent() {
+  const { theme, toggleTheme } = useTheme()
+  
+  return (
+    <div className={`component ${theme}`}>
+      <button onClick={toggleTheme}>
+        Toggle Theme
+      </button>
+    </div>
+  )
+}
+
+```
+
+📁 Project Structure
+
+```
+themeswitcherwithcontext/
+├── src/
+│   ├── components/
+│   │   ├── ThemeButton/
+│   │   └── Card/
+│   ├── contexts/
+│   │   └── ThemeContext.jsx
+│   ├── styles/
+│   │   └── theme.css
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+└── README.md
+```
