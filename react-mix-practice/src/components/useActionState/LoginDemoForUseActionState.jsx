@@ -1,6 +1,6 @@
 import React from 'react';
 import { useActionState } from "react";
-import { Form } from 'react-router-dom';
+
 import './LoginDemoForUseActionState.css';
 
 async function submitForData(prevState, formData) {
@@ -38,7 +38,7 @@ function LoginDemoForUseActionState() {
     <div className="login-container">
       <h1>Login</h1>
       {/* pass formAction into Form’s action */}
-      <Form action={formAction} method="post">
+      <form action={formAction} method="post">
         <div className="form-group">
           <label htmlFor="username">Username:</label>
           <input type="text" id="username" name="username" required />
@@ -57,7 +57,7 @@ function LoginDemoForUseActionState() {
         <button type="submit" disabled={isPending}>
           {isPending ? 'Logging in...' : 'Login'}
         </button>
-      </Form>
+      </form>
 
       {isPending && <p>Processing login request...</p>}
 
