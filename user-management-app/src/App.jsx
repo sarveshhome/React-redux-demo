@@ -1,10 +1,8 @@
-import UserManagement from './UserManagement'
+import UserManagementPage from './pages/UserManagementPage'
 import './App.css'
-import UserTableTwo from './UserManagmentTwo'
 
 function App() {
-  
-  return <UserTableTwo/>
+  return <UserManagementPage />
 }
 
 export default App
