@@ -22,9 +22,18 @@ export default ComponentName;
 ```
 
 
-
 https://react-redux-demo-theta.vercel.app
 
-
-
 https://reactrouterwithloader.netlify.app 
+
+
+-- Refactor user management components and add pagination, search, and sorting features
+
+- Updated App component to use UserManagementPage
+- Created Pagination component for navigating through user pages
+- Added SearchBar component for filtering users by name
+- Implemented SortableTable component for displaying and sorting user data
+- Developed UserTable component to integrate search, sorting, and pagination functionalities
+- Introduced useUserData hook for managing user data state and operations
+- Created UserManagementPage to encapsulate user management logic
+- Added CSS styles for UserTable and its components
