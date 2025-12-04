@@ -37,3 +37,10 @@ https://reactrouterwithloader.netlify.app
 - Introduced useUserData hook for managing user data state and operations
 - Created UserManagementPage to encapsulate user management logic
 - Added CSS styles for UserTable and its components
+
+### Interview question
+
+ React one. I have pasted two URLs(
+ https://dummyjson.com/users 
+ https://dummyjson.com/posts ). 
+ Display first 10 posts, 4 posts in a row. There is a title, body, and user ID in the post. Using this, you need to get a first name and last name in the user API, and this has to happen on load. Each post card contains a title, body, first name, and last name. You need to fetch only first 10 posts, and 4 posts in a row. You need to fetch only first 10 posts, and 4 posts in a row.
