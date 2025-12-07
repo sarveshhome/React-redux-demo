@@ -9,7 +9,7 @@ const PostsGrid = () => {
     const fetchData = async () => {
       try {
         const [postsRes, usersRes] = await Promise.all([
-          fetch('https://dummyjson.com/posts?limit=10'),
+          fetch('https://dummyjson.com/posts?limit=30'),
           fetch('https://dummyjson.com/users')
         ]);
         
